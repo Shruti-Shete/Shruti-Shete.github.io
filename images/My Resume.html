@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/user/Desktop/website_Basic/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="./My Resume_files/style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="./My Resume_files/cvlogo1.jpg">
+            </div>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="file:///C:/Users/user/Desktop/website_Basic/index.html#">Home</a></li>
+                    <li><a href="file:///C:/Users/user/Desktop/website_Basic/index.html#">Account</a></li>
+                    <li><a href="file:///C:/Users/user/Desktop/website_Basic/index.html#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="./My Resume_files/resumeicon.png" class="resume">
+            <div id="circle">
+                <div class="feature one">
+                    
+                    <div>
+                        <h1>EDUCATION</h1>
+                        <p>IT Engineering 1st year : 8.5 cgpa</p>
+                        <p>IT Engineering 2nd year : 7.82 cgpa</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    
+                    <div>
+                        <h1>SKILLS</h1>
+                        <p>Languages:<br>Python<br>Html<br>Javascript<br>CSS</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    
+                    <div>
+                        <h1>PROJECTS</h1>
+                        <p>Web Scraping <br>Tic Tac Toe game in python <br>website development <br>Animation</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    
+                    <div>
+                        <h1>ACHIEVEMENTS</h1>
+                        <p>Spoken Tutorial CPP Certificate <br>Matlab Workshop Quiz -3rd Prize</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <img src="./My Resume_files/arrow.png" id="Upbtn">
+            <h3>NEXT</h3>
+            <img src="./My Resume_files/arrow.png" id="dnbtn">
+        </div>
+    </div>
+
+    <script>
+        var circle =document.getElementById("circle")
+        var Upbtn =document.getElementById("Upbtn")
+        var dnbtn =document.getElementById("dnbtn")
+
+        var rotate =circle.style.transform;
+        var rotatesum;
+
+        Upbtn.onclick=function()
+        {
+            rotatesum=rotate +"rotate(-90deg)";
+            circle.style.transform=rotatesum;
+            rotate=rotatesum;
+        }
+
+        dnbtn.onclick=function()
+        {
+            rotatesum=rotate +"rotate(90deg)";
+            circle.style.transform=rotatesum;
+            rotate=rotatesum;
+        }
+
+
+    </script>
+    
+
+</body></html>
